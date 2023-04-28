@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>readNumber Example</title>
+</head>
+<body>
+  <script>
+
+function readNumber() {
+  let input;
+  do {
+    input = prompt('Введите число', '');
+    if (input === '' || input === null) {
+      return null;
+    }
+  } while (!isFinite(input));
+  return +input;
+}
+readNumber();
+</script>
+</body>
+</html>
